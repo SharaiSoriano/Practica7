@@ -1,0 +1,96 @@
+package pract7;
+
+
+public class bird {
+    public String name;
+    public String color;
+    public String especie;
+
+    public bird(String name,String color, String poder){
+        this.name=name;
+        this.color=color;
+        this.especie=especie;
+    }
+    public String getname(){
+        return name;
+    }
+    public void setname(String name){
+        this.name = name;
+    }
+
+    public String getcolor(){
+        return color;
+    }
+    public void setcolor(String color){
+        this.color = color;
+    }
+
+    public String getespecie(){
+        return especie;
+    }
+    public void setespecie(String especie){
+        this.especie = especie;
+    }
+}
+    public class Chuck extends Bird{
+        private String poder;
+    
+    
+    public String getpoder(){
+    
+        return poder;
+    }
+    public void setpoder(String poder){
+        this.poder = poder;
+    }
+
+    
+
+    public void Chuck (String color, String name, String poder,String especie){
+        super (color, name, especie);
+        this.poder = poder;
+    }
+    
+    public void mostrarBird1(){
+        system.out.println("Name: +getname()+");
+        system.out.println("Color: +getColor()+");
+        system.out.println("Poder: +getpoder()+");
+        system.out.println("Especie: +getespecie()+");
+    }
+    public class Bomb extends Bird {
+        private String poder;
+
+    }  
+    public void Bomb(String Color, String name, int poder, String especie)
+	{
+        super(name,color,especie);
+        this.poder=poder;
+    }
+    public void mostrarBird2(){
+        system.out.println("Name: +getname()+");
+        system.out.println("Color: +getColor()+");
+        system.out.println("Poder: +getpoder()+");
+        system.out.println("Especie: +getespecie()+");
+    }
+    public class Terence extends Bird {
+        private String poder;
+    }    
+    public void Terence(String Color, String name, int poder, String especie)
+	{
+        super(name,color,especie);
+        this.poder=poder;
+
+    }
+    public void mostrarBird3(){
+        system.out.println("Name: +getname()+");
+        system.out.println("Color: +getColor()+");
+        system.out.println("Poder: +getpoder()+");
+        system.out.println("Especie: +getespecie()+");
+    }
+
+}
+
+
+
+
+
